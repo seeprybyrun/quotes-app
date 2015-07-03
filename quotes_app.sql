@@ -30,11 +30,13 @@ CREATE TABLE orders( customer_id int REFERENCES customers,
                      id serial PRIMARY KEY );
 
 CREATE TABLE ordered_items( order_id int REFERENCES orders,
-                            item_id int REFERENCES items );
+                            item_id int REFERENCES items,
+                            id serial PRIMARY KEY );
 
 CREATE TABLE recipes( item_id int REFERENCES items,
                       ingredient_id int REFERENCES ingredients,
-                      amount_of_ingredient real );
+                      amount_of_ingredient real,
+                      id serial PRIMARY KEY );
 
 
 -- Returns all players's IDs and their number of wins, ordered from most wins to least
