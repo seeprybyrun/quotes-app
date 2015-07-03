@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 from quotes_app import *
 
 
@@ -12,8 +10,8 @@ def test_delete_all_addresses():
 
 def test_add_address():
     params = {
-        'street_address': '123 Main Street',
-        'city': 'Bumblefuck',
+        'street_address': '615 Georgia Ave',
+        'city': 'Hinesville',
         'us_state': 'GA',
         'zip_code': '30303'
     }
@@ -47,5 +45,3 @@ if __name__ == '__main__':
     test_delete_all_customers()
     test_add_customer()
     print 'Success! All tests pass!'
-
-
